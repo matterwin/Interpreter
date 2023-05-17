@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Forum from './Core/Forums/Forum';
 import Login from './UserAuth/Login';
 import Register from './UserAuth/Register';
 import PageNotFound from './Core/PageNotFound/PageNotFound';
@@ -15,7 +16,7 @@ function App() {
        <Router>
         
           <Routes>
-            <Route path="/" element={<Login/>}/>
+            <Route path="/" element={<Forum/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/register" element={<Register/>}/>
             <Route path="*" element={<PageNotFound/>}/>
